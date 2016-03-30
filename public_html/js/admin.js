@@ -50,7 +50,7 @@ $(function () {
             this.content.value = "";
         });
         
-        $(document).on('click', 'logout', function(){
+        $(document).on('click', 'logout', function (){
            Backendless.UserService.logout(new Backendless.Async(userLoggedOut, gotError)); 
            
             var loginScript = $("#login-template").html();
