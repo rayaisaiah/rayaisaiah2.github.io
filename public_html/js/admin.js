@@ -4,10 +4,9 @@ $(function () {
         VERSION = "v1";
         
         Backendless.initApp(APPLICATION_ID, SECRET_KEY, VERSION);
-        if(Backendless.UserService.isValueLogin()){
+        if(Backendless.UserService.isValidLogin()){
             userLoggedIn(Backendless.LocalCache.get("current-user-id"));
-        } 
-        else {
+        } else {
             var loginScript = $("#login-template").html();
             var loginTemplate = Handlebars.compile(loginScript);
             $('.main-container').html(loginTemplate);
@@ -62,10 +61,15 @@ function Posts(args){
 
 function userLoggedIn(user) {
     console.log("user successfully logged in");
-    
+    var userData;
+    if (typeof user == "string") {
+        userData = Backendless.Data.of(Backendless.User).findById(user);
+    } else {
+        userData = user;
+    }
     var welcomeScript = $('#welcome-template').html();
     var welcomeTemplate = Handlebars.compile(welcomeScript);
-    var welcomeHTML = welcomeTemplate(user);
+    var welcomeHTML = welcomeTemplate(userData);
     
     $('.main-container').html(welcomeHTML);
 }
