@@ -7,6 +7,7 @@
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link type="text/css" rel="stylesheet" href="css/blog.css">
       <link rel="icon" href="data:;base64,iVBORwOKGgo=">
+      <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
       
 
       <!--Let browser know website is optimized for mobile-->
@@ -66,7 +67,19 @@
                   
                   
       </script>
-      
+      <script type="text/javascript">
+            if (window.addEventListener) {
+                var state = 0, konami = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
+                window.addEventListener("keydown", function (e) {
+                    if (e.keyCode == konami[state])
+                        state++;
+                    else
+                        state = 0;
+                    if (state == 10)
+                        window.location = "http://heyyeyaaeyaaaeyaeyaa.com/";  //Konami
+                }, true);
+            }
+        </script>
           
       
     </body>
