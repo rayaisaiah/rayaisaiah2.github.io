@@ -85,7 +85,7 @@ function userLoggedOut(){
 }
 
 function gotError(error){
-    Materialize.toast('Wrong Username or Password!', 4000) // 4000 is the duration of the toast
+   Materialize.toast('Wrong Username or Password!', 4000) // 4000 is the duration of the toast
    console.log("Error message - " + error.message);
    console.log("Error code - " + error.code);
 }

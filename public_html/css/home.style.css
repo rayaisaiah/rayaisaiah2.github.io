@@ -1,0 +1,36 @@
+.select{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    display: block;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
+p{
+    font-size: 50px;
+    text-align: center;
+    border-radius: 15px;
+    border: 2px solid white;
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+}
+
+.select:hover {
+    background-color: black 
+}
+
+.secret{
+    font-size: 35px;
+    text-align: center;
+    color: black;
+    display: block;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 15px;
+    border: 2px solid white;
+    text-decoration: none;
+}
+
+
+
