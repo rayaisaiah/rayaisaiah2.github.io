@@ -44,6 +44,9 @@ $(function () {
                authorEmail: Backendless.UserService.getCurrentUser().email
            });
            
+
+
+           
            dataStore.save(postObject);
            
            this.title.value = "";
