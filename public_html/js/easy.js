@@ -20,9 +20,11 @@ var restartButton;
 var playHUD;
 var scoreboard;
 var aEat=new Audio(),aDie=new Audio();
+var ibody=new Image();
 
 aEat.src='music/mushroom sound.mp3';
 aDie.src='music/game over.mp3';
+
 
 /* ---------------------------------------------------------------------------------------------------
  *  Executiong Game Code
