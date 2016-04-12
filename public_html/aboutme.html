@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
   <html>
     <head>
       <!--Import Google Icon Font-->
@@ -41,6 +41,10 @@
             <div class="container">
                 <div class="row">
                     <h1 class="center-align">My Blog!</h1>
+                    <h5 class="center-align">About The Author</h5>
+                    <h6 class="center-align">Hi, my name is Isaiah Raya. I am a student at Pasadena High School.
+                                             I made this blog in my web development class.
+                    </h6>
                 </div>
                 <div class="row">
                     <div class="col s12 main-container">
@@ -67,18 +71,13 @@
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js"></script>
       <script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
       
-      <script id="blogs-template" type="text/x-handlebars-template">
-          {{#each posts}}
-          <div class="blog-post">
-              <h2 class="blog-post-title"">{{title}}</h2>
-              <p class="blog-post-meta">At {{format created}} by {{authorEmail}}</p>
-              <div>{{content}}</div>
-          </div>
-          {{/each}}
+      <script class="center-align" id="blogs-template" type="text/x-handlebars-template">
+               
                   
                   
       </script>
-      <script type="text/javascript">
+      
+       <script type="text/javascript">
             if (window.addEventListener) {
                 var state = 0, konami = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
                 window.addEventListener("keydown", function (e) {
@@ -87,12 +86,12 @@
                     else
                         state = 0;
                     if (state == 10)
-                        window.location = "indexeasy.html";  //Konami
+                        window.location = "Its a secret to everyone.html";  //Konami
                 }, true);
             }
         </script>
+      
           
       
     </body>
   </html>
-        
